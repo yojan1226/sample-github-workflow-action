@@ -1,0 +1,14 @@
+name: "action on commit"
+
+on:
+  push:
+    branches:
+      all:
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "commit successfully"
+        run: echo"commit is done"
+  
