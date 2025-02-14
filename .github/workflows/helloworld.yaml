@@ -1,0 +1,14 @@
+name: "hello world workflow"
+ #control when the action will run. triggers the workflow on push same in masterb or
+on:
+  push:
+    branches:
+       - master
+       - prodution
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "print hello world"
+        run: echo "hello world"
